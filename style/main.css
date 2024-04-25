@@ -657,6 +657,14 @@ li::marker{
     height: 607px;
     margin: 100px auto 0 auto;
 }
+.central_block_shawarma_img {
+    background-image: url(../img/shawarma_central.png);
+    background-repeat: no-repeat;
+    background-size: 1330px 607px;
+    width: 1330px;
+    height: 607px;
+    margin: 100px auto 0 auto;
+}
 .featured_projects_img4_salon{
     background-image: url(../img/salon4.png);
     background-repeat: no-repeat;
@@ -680,6 +688,55 @@ li::marker{
 }
 .featured_projects_img7_salon{
     background-image: url(../img/salon7.png);
+    background-repeat: no-repeat;
+    width: 678px;
+    height: 398px;
+    background-size: 678px 398px;
+}
+.featured_projects_img1_shawarma{
+    background-image: url(../img/shawarma1.png);
+    background-repeat: no-repeat;
+    width: 678px;
+    height: 398px;
+    background-size: 678px 398px;
+}
+.featured_projects_img2_shawarma{
+    background-image: url(../img/shawarma2.png);
+    background-repeat: no-repeat;
+    width: 678px;
+    height: 398px;
+    background-size: 678px 398px;
+}
+.featured_projects_img3_shawarma{
+    background-image: url(../img/shawarma3.png);
+    background-repeat: no-repeat;
+    width: 678px;
+    height: 398px;
+    background-size: 678px 398px;
+}
+.featured_projects_img4_shawarma{
+    background-image: url(../img/shawarma4.png);
+    background-repeat: no-repeat;
+    width: 678px;
+    height: 398px;
+    background-size: 678px 398px;
+}
+.featured_projects_img5_shawarma{
+    background-image: url(../img/shawarma5.png);
+    background-repeat: no-repeat;
+    width: 678px;
+    height: 398px;
+    background-size: 678px 398px;
+}
+.featured_projects_img6_shawarma{
+    background-image: url(../img/shawarma6.png);
+    background-repeat: no-repeat;
+    width: 678px;
+    height: 398px;
+    background-size: 678px 398px;
+}
+.featured_projects_img7_shawarma{
+    background-image: url(../img/shawarma7.png);
     background-repeat: no-repeat;
     width: 678px;
     height: 398px;
