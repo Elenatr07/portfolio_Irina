@@ -200,6 +200,12 @@ a {
     padding: 14px 0 14px 0;
 
 }
+.more_about_button:hover {
+    background: #884FED;
+    border: 2px solid rgba(192, 157, 248, 1);
+    transform: scale(0.97);
+    color: rgba(255, 255, 255, 1);
+}
 .get_in_touch_button {
     font-family: "Kumbh Sans", sans-serif;
     font-size: 18px;
@@ -217,17 +223,49 @@ a {
     padding: 14px 0 14px 0;
     
 }
+.get_in_touch_button:hover{
+    transform: scale(0.97);
+    background: #884FED;
+    border: 2px solid rgba(255, 255, 255, 1);;
+}
 .down_button, .down_button_about {
     width: 50px;
     height: 94px;
     margin-left: -65px;
-    
+    width: 50px;
+    border-radius: 30px;
+    background: rgba(139, 82, 238, 1);
+    display: inline-block;
    
+ 
 }
+.down_button::before,
+.down_button_about::before{
+    
+    content: '';
+    top: 32px;
+    left: 14px;
+    width: 19px;
+    height: 19px;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    -moz-transform: rotate(-226deg);
+    -webkit-transform: rotate(-226deg);
+    transform: rotate(-226deg);
+    display: block;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+}
+
 .down_button{
     bottom: -222px;
     position: relative;
     margin-bottom: 45px;
+}
+.down_button:hover,
+.down_button_about:hover{
+    border: 2px solid rgba(192, 157, 248, 1);
+    
 }
 .down_button_about{
     margin-top: 90px;
@@ -423,9 +461,11 @@ a {
     width: 50px;
     height: 94px;
     margin-left: auto;
-  margin-right: 0;
+    margin-right: 0;
   
-    
+    border-radius: 30px;
+    background: rgba(139, 82, 238, 1);
+    display: block;
     bottom: 50px;
     position: relative;
     
@@ -440,10 +480,39 @@ a {
  
     
 }
+.up_button::before, 
+.up_button_about::before,
+.up_button-contacts::before{
+    content: '';
+    top: 41px;
+    left: 15px;
+    width: 19px;
+    height: 19px;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    -moz-transform: rotate(314deg);
+    -webkit-transform: rotate(314deg);
+    transform: rotate(314deg);
+    display: block;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+}
 
 .up_button img {
     width: auto;
    
+}
+.up_button:hover, 
+.up_button_about:hover,
+.up_button-contacts:hover {
+    border: 2px solid rgba(139, 82, 238, 1);
+    background: rgba(255, 255, 255, 1);
+    
+}
+.up_button:hover:before, 
+.up_button_about:hover::before,
+.up_button-contacts:hover::before {
+    color: rgba(139, 82, 238, 1);
 }
 footer {
      background-image: url(../img/footer_backgraund.png);
