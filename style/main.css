@@ -299,7 +299,8 @@ a {
 
 }
 .project_header_bakery,
-.central_block_bakery_header{
+.central_block_bakery_header,
+.contact_header{
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
     font-weight: 600;
@@ -311,6 +312,7 @@ a {
     -webkit-background-clip: text;
     
 }
+
 .project_text,
 .project_text_bakery,
 .project_text_bakery_left,
@@ -415,7 +417,9 @@ a {
     background-size: 678px 398px;
 }
 
-.up_button, .up_button_about {
+.up_button, 
+.up_button_about,
+.up_button-contacts {
     width: 50px;
     height: 94px;
     margin-left: auto;
@@ -575,9 +579,14 @@ li::marker{
 .central_block_bakery{
     margin-top: 132px;
 }
-.central_block_bakery_header {
+.central_block_bakery_header,
+.contact_header {
     text-align: center;
 }
+.contact_header{
+    margin-top: 132px;
+}
+
 .central_block_bakery_img{
     background-image: url(../img/cake_central.png);
     background-repeat: no-repeat;
@@ -741,4 +750,95 @@ li::marker{
     width: 678px;
     height: 398px;
     background-size: 678px 398px;
+}
+.contact_form_img{
+    background-image: url(../img/contact_form_img.png);
+    background-repeat: no-repeat;
+    background-size: 800px 600px;
+    width: 800px;
+    height: 600px;
+    margin: 45px auto;
+}
+.contacts_block {
+    display: flex;
+    margin-top: 100px;
+}
+.input_title{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.8px;
+    text-align: left;
+    margin-bottom: 12px;
+    margin-top: 41px;
+
+}
+form {
+    margin: 0px auto 0 auto;
+}
+.contacts {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.putInfo_for_contacts{
+    width: 536px;
+    height: 55px;
+    border-radius: 30px;
+    border: 2px solid rgba(60, 60, 190, 1);
+    padding: 15px 26px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.8px;
+    text-align: left;
+
+
+}
+.putInfo_for_contacts:focus,
+.text_field:focus{
+    border: 2px solid rgba(206, 127, 249, 1)
+}
+.text_field{
+    width: 536px;
+    height: 250px;
+    border-radius: 30px;
+    border: 2px solid rgba(60, 60, 190, 1);
+    padding: 15px 26px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.8px;
+    text-align: left;
+
+}
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+textarea[type=text]::placeholder {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.8px;
+    text-align: left;
+
+}
+.button_for_contacts{
+    width: 224px;
+    height: 55px;
+    border-radius: 30px;
+    background: rgba(206, 127, 249, 1);
+    border: none;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22.32px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    padding: 15px 50px;
+    margin: 59px auto 150px auto;
+    text-align: center;
+    display: block;
+
+}
+.up_button-contacts{
+    margin-right: 48px;
 }
