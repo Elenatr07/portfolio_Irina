@@ -278,7 +278,7 @@ a {
     
     content: '';
     top: 32px;
-    left: 14px;
+    left: 15px;
     width: 19px;
     height: 19px;
     border-top: 3px solid;
@@ -305,6 +305,7 @@ a {
 .down_button:hover::before,
 .down_button_about:hover::before{
     color: rgba(139, 82, 238, 1);
+    left: 14px;
 }
 .down_button_about{
     margin-top: 90px;
@@ -541,6 +542,26 @@ a {
     display: block;
     color: rgba(255, 255, 255, 1);
     position: relative;
+    
+}
+.up_button:hover::before:nth-child(2){
+    animation-delay: -0.2s;
+}
+.up_button:hover::before:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes up_button {
+    0%{
+        opacity: 0;
+        transform: translate(0,20px) rotate(-45deg);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0,-20px) rotate(-45deg);
+    }
 }
 
 .up_button img {
@@ -559,6 +580,8 @@ a {
 .up_button-contacts:hover::before,
 .down_button:hover::before {
     color: rgba(139, 82, 238, 1);
+    left: 14px;
+    animation: up_button 2s infinite;
 }
 footer {
      background-image: url(../img/footer_backgraund.png);
@@ -639,7 +662,13 @@ footer {
     letter-spacing: 0.15em;
     text-align: left;
     margin-top: 27px;
+    margin-bottom: 20px;
+    color:rgba(255, 255, 255, 1) ;
 
+}
+.email:hover{
+    font-weight: 400;
+   
 }
 .linkedin{
     margin-top: 31px;
