@@ -18,6 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = "$formData";
     $message = "$formData<br> <b>Sender name:</b> $name <br><b>Email:</b> $email <br><b>Message:</b> $text" ;
     $send = mail ($to, $subject, $message, $headers);
+    //header('Location: /success'); если header то переход на страницу success, и в ней верстается отображение сообщения, if тогда убрать
     if ($send == 'true')
     {
     echo '<center><p class="success">Thank you! We will contact you within the next 2 business hours</p></center>';

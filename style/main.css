@@ -45,7 +45,8 @@ a {
 
 .upper_block,
 .upper_block_portfolio,
-.upper_block_bakery {
+.upper_block_bakery,
+.upper_block_success {
    
     background-image:url(../img/color_up.png);
     background-repeat: no-repeat;
@@ -65,6 +66,9 @@ a {
     height: 487px;
 }
 
+.upper_block_success{
+    height: 150px;
+}
 .menu {
     max-width: 1770px;
     margin: 0 auto;
@@ -977,4 +981,53 @@ textarea[type=text]::placeholder {
 }
 .up_button-contacts{
     margin-right: 48px;
+}
+.success{
+    height: 50vh;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.success div{
+    margin: auto 0;
+    display: inline-block
+}
+.success div h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    background: linear-gradient(90.1deg, #444466 0.09%, #884FED 0.1%, #4E1BD1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+.success_back {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22.32px;
+    text-align: left;
+    color: rgba(14, 17, 17, 1);
+    width: 229px;
+    height: 55px;
+    border-radius: 30px;
+    background: rgba(206, 127, 249, 1);
+    border: none;
+    text-align: center;
+    display: inline-block;
+    padding: 14px 0 14px 0;
+    margin-top: 50px;
+}
+.success_back:hover{
+    border: 2px solid #884FED;
+    color: #884FED;
+    background: rgba(255, 255, 255, 1);
+    transform: scale(0.98);
 }
