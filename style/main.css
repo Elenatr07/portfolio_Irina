@@ -90,9 +90,39 @@ a {
     text-align: left;
     color: rgba(255, 255, 255, 1);
     margin-left: 73px;
+    position: relative;
 
 
 }
+.menu_item::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: rgba(206, 127, 249, 1); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.menu_item:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: rgba(255, 255, 255, 1); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+.menu_item:hover{
+   
+    font-weight: 400;
+}
+
+
 .menu_items {
     margin-top: 41px;
     text-align: center;
@@ -264,8 +294,13 @@ a {
 }
 .down_button:hover,
 .down_button_about:hover{
-    border: 2px solid rgba(192, 157, 248, 1);
-    
+    border: 2px solid rgba(139, 82, 238, 1);
+    background: rgba(255, 255, 255, 1);
+   
+}
+.down_button:hover::before,
+.down_button_about:hover::before{
+    color: rgba(139, 82, 238, 1);
 }
 .down_button_about{
     margin-top: 90px;
@@ -423,6 +458,12 @@ a {
 
 
 }
+.find_out_button:hover{
+    transform: scale(0.97);
+    background: rgba(78, 27, 209, 1);
+    color:rgba(255, 255, 255, 1);
+
+}
 .featured_projects_img2{
     background-image: url(../img/salon.png);
     background-repeat: no-repeat;
@@ -511,7 +552,8 @@ a {
 }
 .up_button:hover:before, 
 .up_button_about:hover::before,
-.up_button-contacts:hover::before {
+.up_button-contacts:hover::before,
+.down_button:hover::before {
     color: rgba(139, 82, 238, 1);
 }
 footer {
@@ -567,8 +609,14 @@ footer {
     text-align: left;
     color: rgba(255, 255, 255, 1);
     margin-top: 27px;
+    position: relative;
 
 }
+.site_map_header a:hover{
+    font-weight: 400;
+    font-size: 19px;
+}
+
 .contact_info {
     font-family: "Kumbh Sans", sans-serif;
     font-size: 25px;
@@ -592,9 +640,16 @@ footer {
 .linkedin{
     margin-top: 31px;
 }
+.linkedin img:hover{
+    transform: scale(0.95);
+}
+
 .menu_item u {
     text-decoration: underline;
     text-underline-offset: 10px;
+}
+.menu_item u:hover{
+    text-decoration: none;
 }
 
 .slider_block {
@@ -644,6 +699,12 @@ li::marker{
     margin-top: 150px;
     display: flex;
     justify-content: space-between;
+}
+
+.pic_items a img:hover{
+    transform: scale(0.99);
+ 
+   
 }
 .central_block_bakery{
     margin-top: 132px;
@@ -907,6 +968,12 @@ textarea[type=text]::placeholder {
     text-align: center;
     display: block;
 
+}
+.button_for_contacts:hover{
+    border: 2px solid rgba(139, 82, 238, 1);
+    background: rgba(255, 255, 255, 1);
+    color:rgba(139, 82, 238, 1);
+    transform: scale(0.98);
 }
 .up_button-contacts{
     margin-right: 48px;

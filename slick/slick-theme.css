@@ -84,6 +84,10 @@
     background-image: url(../img/arrow_right.png);
     background-repeat: no-repeat;
 }
+.slick-prev:hover,
+.slick-next:hover{
+    transform: scale(0.95);
+}
 [dir='rtl'] .slick-next
 {
     right: auto;
