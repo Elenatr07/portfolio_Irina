@@ -1813,6 +1813,41 @@ textarea[type=text]::placeholder {
         margin-bottom: 4px;
     }
 }
-@media(max-width:500px){
-    
+@media(max-width:600px){
+    .logo {
+        margin-left: 27px;
+    }
+    .name {
+        font-size: 14px;
+        top: 25px;
+    }
+    .main_header, 
+    .main_header_about, 
+    .main_header_portfolio {
+        font-size: 21px;
+    }
+    .main_text, 
+    .main_text_about, 
+    .main_text_portfolio {
+        font-size: 14px;
+        line-height: 24.5px;
+        margin-top: 13px;
+        margin-top: 2px;
+        font-weight: 300;
+    }
+    .main_header_buttons {
+        width: 93%;
+        margin-top: 14px;
+    }
+    .main_text {
+        max-width: 231px;
+    }
+    .up_button, 
+    .up_button_about, 
+    .up_button-contacts {
+        bottom: 21px;
+    }
+    .featured_projects_info {
+        margin: 0 auto 0px auto;
+    }
 }
