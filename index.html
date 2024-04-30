@@ -11,19 +11,31 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="nav_shadow"></div>
     <div class="container">
         <div class="upper_block">
-           <div class="menu">
-            <p><a name="up"></a></p>
+             <!-- Hamburger icon -->
+             <input class="side-menu" type="checkbox" id="side-menu" />
+             <label class="hamb" for="side-menu" id="menu_opener"><span class="hamb-line"></span></label>
+           <div class="logo">
                 <a class="name" href="#">IRINA TURKINA</a>
-                 <div class="menu_items">
-                    <a class="menu_item" href="about.html">About</a>
-                    <a class="menu_item" href="portfolio.html">Portfolio</a> 
-                    <a class="menu_item" href="contact.html">Contact</a>
-                </div>
-           
+           </div>
+             
+            <nav class="nav">
+                <div class="menu">
+                    <p><a name="up"></a></p>
+                   
+                    <div class="menu_items">
+                        <a class="menu_item" href="about.html">About</a>
+                        <a class="menu_item" href="portfolio.html">Portfolio</a> 
+                        <a class="menu_item" href="contact.html">Contact</a>
+                        <a href="https://www.linkedin.com/in/irina-turkina-8a155a170/" target="_blank" class="linkedin_menu"><img src="img/linkedin.svg" alt="" ></a>
+                    </div>
+            
 
-            </div> 
+                </div> 
+           </nav>
+            
             <div class="first_block">
                 
                 <h1 class="main_header"> I’m Irina - a Product Owner & UX/UI designer  </h1>
@@ -62,7 +74,11 @@
                     <h3 class="project_header">Bakery & More</h3>
                     <p class="project_text">This project is a custom cake ordering platform that I designed independently for a client seeking to 
                         expand their business operations and streamline the order process for their customers through a new website.</p>
-                    <a href="bakery.html" class="find_out_button">Find out more</a>
+                <div class="button_block">
+                     <a href="bakery.html" class="find_out_button">Find out more</a>
+                </div>
+        
+                       
                 </div>
 
             </div>
@@ -114,5 +130,6 @@
 
         </footer>
     </div>
+    <script src="style_menu.js"></script>
 </body>
 </html>
