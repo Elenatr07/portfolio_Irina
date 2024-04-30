@@ -359,6 +359,7 @@ a {
    max-width: 700px;
    width: 100%;
    height: 100%;
+   order: 2;
    
 }
 .featured_projects_img1_bakery,
@@ -455,6 +456,7 @@ a {
     margin: auto 122px auto 0;
     max-width: 678px;
     width: 100%;
+    order: 2;
 }
 .find_out_button{
     font-family: "Kumbh Sans", sans-serif;
@@ -484,7 +486,10 @@ a {
 
 
 .featured_projects_text2{
-    margin: auto 0 auto 0
+    margin: auto 0 auto 0;
+    order: 1;
+    max-width: 678px;
+    width: 100%;
 }
 
 
@@ -1729,7 +1734,8 @@ textarea[type=text]::placeholder {
         flex-direction: column;
     }
     .featured_projects_img,
-    .featured_projects_text1 {
+    .featured_projects_text1,
+    .featured_projects_text2 {
         width: 85%;
     }
     .featured_projects_text1 {
@@ -1740,5 +1746,73 @@ textarea[type=text]::placeholder {
         text-align: center;
         margin-top: 24px;
     }
+    .button_block {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .featured_projects_text2 {
+       order: 2;
+       margin: auto;
+    }
+    .featured_projects_img{
+        order: 1;
+    }
+    .featured_projects_info {
+        margin: 0 auto 40px auto;
+    }
 }
 
+@media(max-width:700px){
+    .main_header, 
+    .main_header_about, 
+    .main_header_portfolio {
+        font-size: 25px;
+    }
+    .main_text, 
+    .main_text_about, 
+    .main_text_portfolio {
+        font-size: 15px;
+        line-height: 27.5px;
+        margin-top: 17px;
+    }
+    .more_about_button, .get_in_touch_button {
+        width: 97px;
+        font-size: 11px;
+        height: 32px;
+        padding: 4px 0 5px 0;
+    }
+    .main_header_buttons {
+        width: 77%;
+    }
+    .featured_projects_header, 
+    .portfolio_header {
+        font-size: 25px;
+    }
+    .featured_projects_header {
+        margin: 20px auto 0px auto;
+    }
+    .find_out_button {
+        font-size: 11px;
+        width: 114px;
+        height: 33px;
+        padding: 4px 0 4px 0;
+    }
+    .footer_name {
+        font-size: 16px;
+        margin-bottom: 21px;
+    }
+    .site_map_header, .contact_info {
+        font-size: 15px;
+    }
+    .site_map_header a, .phone, .email {
+        margin-top: 10px;
+        font-size: 11px;
+    }
+    .phone, .email {
+        margin-bottom: 4px;
+    }
+}
+@media(max-width:500px){
+    
+}
