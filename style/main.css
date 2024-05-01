@@ -676,7 +676,7 @@ footer {
     line-height: 31.01px;
     letter-spacing: 0.1em;
     color: rgba(255, 255, 255, 1);
-    margin-right: 343px;
+    
 
 }
 .phone, .email {
@@ -1069,7 +1069,7 @@ textarea[type=text]::placeholder {
  .map_block{
     display: flex;
     justify-content: space-around;
-    width: 60%;
+    width: 70%;
  }
  .img_central_block{
     display: flex;
@@ -1166,9 +1166,7 @@ textarea[type=text]::placeholder {
         margin: auto 60px auto 0;
         width: 42%;
     }
-    .contact_info {
-       margin-right: 175px;
-    }
+    
     .project_text{
         width: 90%;
     }
@@ -1222,9 +1220,7 @@ textarea[type=text]::placeholder {
     .site_map_header a:hover{
         font-size: 18px;
     }
-    .contact_info {
-        margin-right: 75px;
-    }
+   
 }
 @media(max-width:1300px){
     
@@ -1320,9 +1316,7 @@ textarea[type=text]::placeholder {
     .phone, .email {
         font-size: 16px;
     }
-    .site_map_header a:hover {
-        font-size: 17px;
-    }
+   
     
 }
 @media(max-width:1150px) {
@@ -1369,9 +1363,7 @@ textarea[type=text]::placeholder {
     .site_map_header a {
         font-size: 15px;
     }
-    .site_map_header a:hover {
-        font-size: 16px;
-    }
+    
     .linkedin img {
         width: 17%;
     }
@@ -1513,9 +1505,7 @@ textarea[type=text]::placeholder {
     .site_map_header, .contact_info {
         font-size: 18px;
     }
-    .site_map_header a {
-        font-size: 13px;
-    }
+   
     .site_map_header a,
     .phone, .email{
         margin-top: 17px;
@@ -1523,23 +1513,23 @@ textarea[type=text]::placeholder {
     .footer_name{
         margin-top: -7px;
     }
-    footer{
-        height: 237px;
-    }
+   
     .footer_block {
         padding-top: 45px;
     }
-    .site_map_header a:hover {
-        font-size: 15px;
-    }
+    
   
     
     .main_header_buttons {
         width: 95%;
         margin-bottom: 75px;
     }
+    footer{
+        height: 240px;
+    }
 }
 @media(max-width:900px){
+   
     .main_header_img_min {
         display: block;
         right: -43px;
@@ -1552,7 +1542,7 @@ textarea[type=text]::placeholder {
         display: none;
     }
     .logo {
-        margin-left: 42px;
+        margin-left: 39px;
     }
     .menu_item {
         font-size: 13px;
@@ -1565,7 +1555,9 @@ textarea[type=text]::placeholder {
     .main_header_img_container {
         width: 40%;
     }
-    
+    .map_block{
+        width: 66%;
+    }
    
    
     .main_header_buttons {
@@ -1600,7 +1592,7 @@ textarea[type=text]::placeholder {
     }
     .featured_projects_img {
          display: block;
-         margin: 20px auto auto auto;
+         margin:  auto 20px auto auto;
     }
     .up_button::before, 
     .up_button_about::before, 
@@ -1652,14 +1644,12 @@ textarea[type=text]::placeholder {
     }
     .site_map_header a {
         margin-top: 15px;
-        font-size: 12px;
+       
     }
     .phone, .email {
         margin-bottom: 8px;
     }
-    .site_map_header a:hover {
-        font-size: 14px;
-    }
+    
     .main_header, 
     .main_header_about, 
     .main_header_portfolio{
@@ -1679,6 +1669,10 @@ textarea[type=text]::placeholder {
 }
 
 @media(max-width:800px){
+    .featured_projects_img {
+       
+        margin: auto;
+    }
     .main_text {
         max-width: 397px;
     }
@@ -1727,7 +1721,7 @@ textarea[type=text]::placeholder {
     .featured_projects_img,
     .featured_projects_text1,
     .featured_projects_text2 {
-        width: 85%;
+        width: 96%;
     }
     .featured_projects_text1 {
         margin: auto;
@@ -1797,105 +1791,60 @@ textarea[type=text]::placeholder {
     .footer_name{
         margin-bottom: 23px;
     }
+    .email{
+        margin-bottom: 40px;
+    }
+    footer{
+        height: 282px;
+    }
      
 }
 
 @media(max-width:700px){
-    .main_header, 
-    .main_header_about, 
-    .main_header_portfolio {
-        font-size: 25px;
+    .first_block{
+        width: 89%;
     }
-    .main_text, 
-    .main_text_about, 
-    .main_text_portfolio {
-        font-size: 15px;
-        line-height: 27.5px;
-        margin-top: 17px;
+    .main_text {
+        max-width: 444px;
     }
-    .more_about_button, .get_in_touch_button {
-        width: 97px;
-        font-size: 11px;
-        height: 32px;
-        padding: 4px 0 5px 0;
-    }
+
+    
     .main_header_buttons {
         width: 77%;
     }
-    .featured_projects_header, 
-    .portfolio_header {
-        font-size: 25px;
-    }
+    
     .featured_projects_header {
-        margin: 20px auto 0px auto;
+        margin: 60px auto 30px auto;
     }
-    .find_out_button {
-        font-size: 11px;
-        width: 114px;
-        height: 33px;
-        padding: 4px 0 4px 0;
+    .main_header_img_min {
+        width: 39%;
     }
-    .footer_name {
-        font-size: 16px;
-        margin-bottom: 21px;
-    }
-    .site_map_header, .contact_info {
-        font-size: 15px;
-    }
-    .site_map_header a, .phone, .email {
-        margin-top: 10px;
-        font-size: 11px;
-    }
-    .phone, .email {
-        margin-bottom: 4px;
-    }
-    .map_block{
-        width: 60%;
-    }
-    .contact_info {
-        margin-right: 25px;
-    }
-    .site_map_header a:hover {
-        font-size: 13px;
-    }
+   
+    
+    
+   
 }
 @media(max-width:600px){
-    .logo {
-        margin-left: 27px;
+    
+  
+    .first_block {
+        width: 84%;
     }
-    .name {
-        font-size: 14px;
-        top: 25px;
-    }
-    .main_header, 
-    .main_header_about, 
-    .main_header_portfolio {
-        font-size: 21px;
-    }
-    .main_text, 
-    .main_text_about, 
-    .main_text_portfolio {
-        font-size: 14px;
-        line-height: 24.5px;
-        margin-top: 13px;
-        margin-top: 2px;
-        font-weight: 300;
-    }
+   
     .main_header_buttons {
         width: 93%;
-        margin-top: 14px;
+        margin-top: 74px;
+        margin-bottom: 86px;
     }
-    .main_text {
-        max-width: 231px;
+    .main_header_img_min {
+        top: 215px;
     }
     .up_button, 
     .up_button_about, 
     .up_button-contacts {
         bottom: 21px;
     }
-    .featured_projects_info {
-        margin: 0 auto 0px auto;
-    }
+   
     .footer_block {
          flex-direction: column;
         justify-content: center;
@@ -1904,129 +1853,93 @@ textarea[type=text]::placeholder {
         margin-top: -4px;
         margin-left: 18px;
     }
-    .map_block{
-        width: 108%;
-    }
-    .footer_block {
-        padding-top: 38px;
-    }
+    
+    
     .linkedin img {
         width: 70%;
     }
-    .map_block {
-        width: 108%;
-    }
+   
     .footer_left_part{
          display: flex;
         justify-content: center;
         
     }
-    .site_map_header a, .phone, .email {
-        margin-top: 6px;
-    }
-    .phone, .email {
-        margin-bottom: 0px;
-    }
+   
     .footer_name {
         margin-bottom: 15px;
     }
     .main_header_img{
         margin-top: -10px;
     }
+    .main_header_img_min {
+        width: 38%;
+    }
 }
 @media(max-width:500px) {
-    .main_header, 
-    .main_header_about, 
-    .main_header_portfolio {
-        font-size: 20px;
+   
+    .main_header_img_min {
+        top: 218px;
     }
-    .main_header{
-        line-height: 30px;
-        width: 82%;
-    }
-    .name {
-        font-size: 12px;
-    }
-    .main_text, .main_text_about, 
-    .main_text_portfolio {
-        font-size: 13px;
-        line-height: 23.5px;
-        margin-top: 13px;
-      
-    }
+    
     .main_header_img{
         width: 53%;
         margin-top: -28px;
         margin-bottom: 50px;
     }
     .main_header_buttons {
-        width: 111%;
+        width: 59%;
     }
     .site_map_header, .contact_info {
         font-size: 14px;
     }
-    .main_header {
-        margin-top: 64px;
-    }
+    
     .up_button {
         margin-right: 0px;
       }
+      .main_text {
+        margin-top: 40px;
+    }
+    .main_header_buttons {
+        margin-top: 50px;
+    }
 }
 @media(max-width:440px){
-    .main_header, 
-    .main_header_about, 
-    .main_header_portfolio {
-        font-size: 19px;
+    .main_header {
+        font-size: 35px;
     }
     .main_text, 
     .main_text_about, 
     .main_text_portfolio {
-        font-size: 12px;
-        line-height: 21.5px;
-        margin-top: 13px;
-    }
-    .more_about_button, .get_in_touch_button {
-        width: 91px;
-        font-size: 10px;
-    }
-   
-}
-@media(max-width:400px){
-    .main_header, 
-    .main_header_about, 
-    .main_header_portfolio {
         font-size: 18px;
+        line-height: 27px;
+        margin-top: 29px;
+        text-align: justify;
     }
-    .main_text {
-        max-width: 169px;
+    .main_header_img_min {
+        width: 50%;
+    }  
+    .main_header_buttons {
+        margin-bottom: 189px;
     }
-    .main_header_img {
-        width: 43%;
-        margin-top: 0px;
-        margin-bottom: 94px;
+    .main_header_img_min {
+        top: 204px;
     }
     .featured_projects_header, 
     .portfolio_header {
-        font-size: 18px;
+        font-size: 32px;
     }
     .project_header {
-        font-size: 16px;
+        font-size: 25px;
     }
-    .project_text, 
-    .project_text_bakery, 
-    .project_text_bakery_left, 
-    .central_block_bakery_text {
-        font-size: 11px;
-        line-height: 22px;
-    }
-    .find_out_button {
-        margin-top: 0px;
-        margin-bottom: 13px;
-    }
-    .find_out_button {
-        font-size: 10px;
-        width: 106px;
-    }
+}
+@media(max-width:400px){
+    
+   
+   
+    
+    
+   
+    
     .up_button,
     .up_button_about,
     .up_button-contacts
@@ -2048,18 +1961,51 @@ textarea[type=text]::placeholder {
     .up_button-contacts:hover::before {
         left: 7px;
     }
-    .footer_name {
-        font-size: 14px;
-        margin-bottom: 12px;
+    .map_block {
+        width: 90%;
     }
-    .linkedin img {
-        width: 62%;
+    .logo {
+        margin-left: 28px;
     }
-    .site_map_header, .contact_info {
-        font-size: 13px;
-    }
-    .site_map_header a, .phone, .email {
-        font-size: 10px;
-    }
+ 
 
+}
+@media(max-width:391px){
+    .main_header_img_min {
+        top: 267px;
+    }
+    .featured_projects_header, 
+    .portfolio_header {
+        font-size: 31px;
+    }
+    .project_header {
+        font-size: 24px;
+    }
+}
+@media(max-width:350px){
+    .main_header {
+        font-size: 33px;
+    }
+    .main_text, 
+    .main_text_about, 
+    .main_text_portfolio {
+        font-size: 17px;
+    }
+    .more_about_button, 
+    .get_in_touch_button {
+        width: 153px;
+    }
+    .featured_projects_header, .portfolio_header {
+        font-size: 28px;
+    }
+    .project_header {
+        font-size: 23px;
+    }
+    .project_text, 
+    .project_text_bakery, 
+    .project_text_bakery_left, 
+    .central_block_bakery_text, 
+    .find_out_button {
+        margin-top: 16px;
+    }
 }
