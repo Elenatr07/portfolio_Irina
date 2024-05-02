@@ -2173,7 +2173,9 @@ textarea[type=text]::placeholder {
     .button_left_right{
         margin-top: 0;
     }
-    
+    .featured_projects_header {
+        margin: 50px auto 25px auto;
+    }
  
 
 }
