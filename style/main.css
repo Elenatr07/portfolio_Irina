@@ -561,7 +561,7 @@ a {
 }
 .button_left_right{
     max-width: 1148px;
-    width: 100%;
+    width: 51%;
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -1190,7 +1190,7 @@ textarea[type=text]::placeholder {
         width: 90%;
     }
     .button_left_right{
-       width: 51%;  
+       width: 48%;  
     }
     .slider_info{
         width: 60%;
@@ -1256,19 +1256,11 @@ textarea[type=text]::placeholder {
 }
 @media(max-width:1650px){
     .button_left_right {
-        width: 52%;
+        width: 48%;
     }
 }
-@media(max-width:1600px){
-    .button_left_right{
-        width: 54%;  
-     }
-}
-@media(max-width:1550px){
-    .button_left_right {
-        width: 56%;
-    }
-}
+
+
 @media(max-width:1500px){
     .main_header, 
     .main_header_about, 
@@ -1315,27 +1307,11 @@ textarea[type=text]::placeholder {
     .site_map_header a:hover{
         font-size: 18px;
     }
-    .button_left_right {
-        width: 57%;
-    }
-   
-}
-@media(max-width:1450px){
-    .button_left_right {
-        width: 59%;
-    }
-}
-@media(max-width:1400px) {
-    .button_left_right {
-        width: 61%;
-    }
     
 }
-@media(max-width:1350px){
-    .button_left_right {
-        width: 63%;
-    }
-}
+
+
+
 @media(max-width:1300px){
     
     .main_text {
@@ -1375,9 +1351,9 @@ textarea[type=text]::placeholder {
         margin-top: 27px;
     }
     .button_left_right {
-        width: 65%;
+        width: 53%;
     }
-
+   
 }
 @media(max-width:1247px) {
     .project_text {
@@ -1386,6 +1362,8 @@ textarea[type=text]::placeholder {
     .featured_projects_text1 {
         width: 48%;
     }
+    
+
 }
 @media(max-width:1200px){
     .name{
@@ -1395,10 +1373,6 @@ textarea[type=text]::placeholder {
         font-size: 16px;
     }
     
-   
-   
-    
-   
     .down_button, 
     .down_button_about, 
     .up_button,
@@ -1485,7 +1459,21 @@ textarea[type=text]::placeholder {
     .linkedin img {
         width: 17%;
     }
+    .button_left_right {
+        width: 62%;
+        margin-top: 27px;
+    }
+    .prev, .next {
+        width: 47px;
+        height: 85px;
+    }
+    .next::before,
+    .prev::before {
+        
+        width: 17px;
+        height: 17px;
  }
+}
  @media(max-width:1000px){
     .down_button_block{
         display: none;
@@ -1493,7 +1481,9 @@ textarea[type=text]::placeholder {
     .main_header_img_container {
         width: 65%;
     }
-    
+    .button_left_right {
+        width: 70%;
+    }
     .name {
         font-size: 16px;
         top: 44px;
@@ -1600,10 +1590,6 @@ textarea[type=text]::placeholder {
         margin-top: 80px;
     }
     
-    
-   
-   
-   
     .up_button::before, 
     .up_button_about::before, 
     .up_button-contacts::before {
@@ -1791,6 +1777,7 @@ textarea[type=text]::placeholder {
     }
     .slider_info_txt li {
         line-height: 23px;
+        font-size: 17px;
     }
     
 
@@ -1885,6 +1872,36 @@ textarea[type=text]::placeholder {
         margin-top: 18px;
         text-align: center;
     }
+    .slider_block {
+        flex-direction: column;
+    }
+    .slider_info{
+        order: 1;
+        margin: auto;
+    }
+    .button_left_right {
+        width: 23%;
+    }
+    .slider_info_header {
+        text-align: center;
+    }
+    .slider_info_txt li {
+        line-height: 27px;
+        font-size: 18px;
+    }
+    .button_left_right {
+        width: 39%;
+    }
+    .prev{
+        margin-left: 20%;
+    }
+    .first_block_about {
+        height: 887px;
+    }
+    .slider_info {
+        width: 70%;
+    }
+    
 }
 @media(max-width:769px){
     .main_header {
@@ -1955,8 +1972,16 @@ textarea[type=text]::placeholder {
     
    
 }
+@media(max-width:650px){
+    .first_block_about {
+        height: 950px;
+    }
+}
+
 @media(max-width:600px){
-    
+    .first_block_about {
+        height: 995px;
+    }
   
     .first_block {
         width: 84%;
@@ -2005,11 +2030,28 @@ textarea[type=text]::placeholder {
     .main_header_img_min {
         width: 38%;
     }
+    .main_text_about{
+        font-size: 21px;
+    }
+    .slider_info {
+        width: 85%;
+    }
+    .button_left_right {
+        width: 50%;
+    }
 }
 @media(max-width:500px) {
-   
+    .prev {
+        margin-right: 68px;
+    }
+    .button_left_right {
+        width: 56%;
+    }
     .main_header_img_min {
         top: 218px;
+    }
+    .main_text_about {
+        font-size: 19px;
     }
     
     .main_header_img{
@@ -2033,11 +2075,30 @@ textarea[type=text]::placeholder {
     .main_header_buttons {
         margin-top: 50px;
     }
+    .slider_info_txt li{
+        letter-spacing: 0.07rem;
+    }
+}
+@media(max-width:450px){
+    .first_block_about {
+        height: 1030px;
+    }
+    .slider_info {
+        width: 90%;
+    }
+    .button_left_right {
+        width: 60%;
+    }
+
 }
 @media(max-width:440px){
     .main_header {
         font-size: 35px;
     }
+    .first_block_about {
+        height: 829px;
+    }
+
     .main_text, 
     .main_text_about, 
     .main_text_portfolio {
@@ -2062,12 +2123,16 @@ textarea[type=text]::placeholder {
     .project_header {
         font-size: 25px;
     }
+    .prev {
+        margin-left: 16%;
+    }
+
 }
+
 @media(max-width:400px){
-    
-   
-   
-    
+    .first_block_about {
+        height: 875px;
+    }   
     
    
     
@@ -2112,6 +2177,26 @@ textarea[type=text]::placeholder {
     .project_header {
         font-size: 24px;
     }
+    .first_block_about {
+        height: 912px;
+    }
+    .slider_info {
+        width: 94%;
+    }
+    .slider_info_txt li {
+        letter-spacing: 0.06rem;
+        font-size: 17px;
+    }
+    .slider_info_header {
+        font-size: 24px;
+    }
+    .prev {
+        margin-left: 14%;
+    }
+    .prev, .next {
+        width: 45px;
+        height: 80px;
+    }
 }
 @media(max-width:350px){
     .main_header {
@@ -2139,4 +2224,17 @@ textarea[type=text]::placeholder {
     .find_out_button {
         margin-top: 16px;
     }
+    .first_block_about {
+        height: 932px;
+    }
+    .slider_info_txt li{
+       font-size: 16px; 
+       letter-spacing: 0.04rem;
+    }
+    .prev {
+        margin-left: 14%;
+    }
+        
+    
+
 }
