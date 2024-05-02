@@ -142,6 +142,7 @@ a {
 .first_block_about{
     margin: 0 auto;
     max-width: 1673px;
+    width: 100%;
   
 }
 .first_block_portfolio {
@@ -221,7 +222,7 @@ a {
 }
 .main_header_info_about{
     max-width: 1225px;
-    margin: 0 auto;
+    margin: 0 auto 110px auto;
 }
 .main_header_buttons{
     margin-top: 60px;
@@ -531,10 +532,14 @@ a {
     margin-right: -15px;
 }
 .up_button_about{
-    margin-top: 117px;
-    margin-right: -50px;
- 
-    
+    margin-top: 20px;
+    margin-right: -15px;
+        
+}
+.up_button_about_container{
+    max-width: 1752px;
+    width: 100%;
+    margin: 0 auto 0 auto;
 }
 .up_button::before, 
 .up_button_about::before,
@@ -553,6 +558,64 @@ a {
     color: rgba(255, 255, 255, 1);
     position: relative;
     
+}
+.button_left_right{
+    max-width: 1148px;
+    width: 100%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.prev, .next{
+    width: 50px;
+    height: 94px;
+    left: 94px;
+    gap: 0px;
+    border-radius: 30px;
+     transform: rotate(-90deg);
+    background: rgba(206, 127, 249, 1);
+    border: none;
+
+
+}
+.prev{
+    margin-right: 80px;
+}
+.prev:hover, .next:hover{
+    background: rgba(139, 82, 238, 1);
+    
+    transform: rotate(-90deg) scale(0.98);
+}
+.prev::before{
+    content: '';
+    top: 5px;
+    left: 15px;
+    width: 19px;
+    height: 19px;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    -moz-transform: rotate(314deg);
+    -webkit-transform: rotate(314deg);
+    transform: rotate(314deg);
+    display: block;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+}
+.next::before{
+    content: '';
+    top: -2px;
+    left: 15px;
+    width: 19px;
+    height: 19px;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    display: block;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
 }
 
 @keyframes up_button {
@@ -726,6 +789,8 @@ footer {
 
 .slider_block {
     display: flex !important;
+    justify-content: space-between;
+    
 }
 
 .slider_info_header{
@@ -755,10 +820,13 @@ footer {
 .featured_projects_about {
     max-width: 1660px;
     margin: 0 auto;
+    width: 100%;
 }
 .slider_info{
-    
-    margin: auto 0 auto 239px;
+    max-width: 678px;
+    width: 100%;
+    margin: auto 0 auto 0;
+    order: 2;
 }
 li::marker{
     font-size: 0.8rem;
@@ -1054,6 +1122,7 @@ textarea[type=text]::placeholder {
     position: relative;
     top: 64px;
     margin: 0 auto;
+    display: block;
 }
 .shadow {
     background-color: #7d698a;
@@ -1097,8 +1166,8 @@ textarea[type=text]::placeholder {
  }
  .nav {
     max-height: 100px;
-    float: right;
-    width: 100%;
+   margin: 0 auto;
+    width: 60%;
     right: 0;
     height: 100px;
     position: relative;
@@ -1115,9 +1184,20 @@ textarea[type=text]::placeholder {
     .featured_projects,
     .down_button_block,
     .footer_block,
-    .logo  {
+    .logo,
+    .first_block_about,
+    .up_button_about_container  {
         width: 90%;
     }
+    .button_left_right{
+       width: 51%;  
+    }
+    .slider_info{
+        width: 60%;
+    }
+       
+    
+    
   
 }
 @media(max-width:1800px){
@@ -1174,6 +1254,21 @@ textarea[type=text]::placeholder {
         width: 45%;
     }
 }
+@media(max-width:1650px){
+    .button_left_right {
+        width: 52%;
+    }
+}
+@media(max-width:1600px){
+    .button_left_right{
+        width: 54%;  
+     }
+}
+@media(max-width:1550px){
+    .button_left_right {
+        width: 56%;
+    }
+}
 @media(max-width:1500px){
     .main_header, 
     .main_header_about, 
@@ -1220,7 +1315,26 @@ textarea[type=text]::placeholder {
     .site_map_header a:hover{
         font-size: 18px;
     }
+    .button_left_right {
+        width: 57%;
+    }
    
+}
+@media(max-width:1450px){
+    .button_left_right {
+        width: 59%;
+    }
+}
+@media(max-width:1400px) {
+    .button_left_right {
+        width: 61%;
+    }
+    
+}
+@media(max-width:1350px){
+    .button_left_right {
+        width: 63%;
+    }
 }
 @media(max-width:1300px){
     
@@ -1260,6 +1374,9 @@ textarea[type=text]::placeholder {
     .find_out_button {
         margin-top: 27px;
     }
+    .button_left_right {
+        width: 65%;
+    }
 
 }
 @media(max-width:1247px) {
@@ -1284,7 +1401,8 @@ textarea[type=text]::placeholder {
    
     .down_button, 
     .down_button_about, 
-    .up_button {
+    .up_button,
+    .up_button_about {
         height: 85px;
         width: 47px;
     }
@@ -1419,23 +1537,33 @@ textarea[type=text]::placeholder {
         margin: 70px auto 70px auto;
     }
    
-    .project_header {
+    .project_header,
+    .slider_info_header  {
         font-size: 26px;
     }
     .project_text, 
     .project_text_bakery, 
     .project_text_bakery_left, 
     .central_block_bakery_text, 
-    .find_out_button {
+    .find_out_button,
+    .slider_info_txt li {
         margin-top: 16px;
     }
-   
+    .slider_info_txt li {
+        line-height: 28px;
+    }
     
     .footer_name {
         font-size: 24px;
     }
     .site_map_header, .contact_info {
         font-size: 20px;
+    }
+    .first_block_about{
+        height: 743px;
+    }
+    .main_header_about {
+        margin-top: 108px;
     }
 }
 @media(max-width:950px){
@@ -1447,7 +1575,8 @@ textarea[type=text]::placeholder {
     }
     .down_button, 
     .down_button_about, 
-    .up_button {
+    .up_button,
+    .up_button_about {
         height: 64px;
         width: 37px;
         
@@ -1570,7 +1699,8 @@ textarea[type=text]::placeholder {
     }
     .down_button, 
     .down_button_about, 
-    .up_button {
+    .up_button,
+    .up_button_about {
         height: 58px;
         width: 32px;
     }
@@ -1659,6 +1789,9 @@ textarea[type=text]::placeholder {
     .portfolio_header {
         font-size: 34px;
     }
+    .slider_info_txt li {
+        line-height: 23px;
+    }
     
 
 }
@@ -1708,9 +1841,7 @@ textarea[type=text]::placeholder {
     .down_button_block{
         display: none;
     }
-    .main_header {
-        margin-top: 85px;
-    }
+   
     
     .featured_projects_info, 
     .featured_projects_info_bakery {

@@ -13,19 +13,30 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="nav_shadow"></div>
     <div class="container">
         <div class="upper_block">
-           <div class="menu">
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu" id="menu_opener"><span class="hamb-line"></span></label>
+          <div class="logo">
+               <a href="index.html" class="name" >IRINA TURKINA</a>
+          </div>
             <p><a name="up"></a></p>
-                <a class="name" href="index.html">IRINA TURKINA</a>
-                 <div class="menu_items">
-                    <a class="menu_item" href="#"><u>About</u></a>
-                    <a class="menu_item" href="portfolio.html">Portfolio</a> 
-                    <a class="menu_item" href="contact.html">Contact</a>
-                </div>
+           <nav class="nav">
+               <div class="menu">
+                   
+                  
+                   <div class="menu_items">
+                       <a class="menu_item" href="#"><u>About</u></a>
+                       <a class="menu_item" href="portfolio.html">Portfolio</a> 
+                       <a class="menu_item" href="contact.html">Contact</a>
+                       <a href="https://www.linkedin.com/in/irina-turkina-8a155a170/" target="_blank" class="linkedin_menu"><img src="img/linkedin.svg" alt="" ></a>
+                   </div>
            
 
-            </div> 
+               </div> 
+          </nav>
             <div class="first_block_about">
                 
                 
@@ -47,11 +58,12 @@
                    
                
                 </div>
-                <a href="#central" class="down_button_about">
-                        
-                </a>
+               
 
-            </div>
+            </div> 
+            <div class="down_button_block">
+                    <a href="#central" class="down_button"></a>
+                </div>
         </div>
         
         <p><a name="central"></a></p>
@@ -60,7 +72,10 @@
             <h2 class="featured_projects_header">My Skills</h2>
             <section class="lazy slider" data-sizes="50vw">
                 <div class="slider_block">
-                  <img src="img/web_design_slills.png" alt="" >
+                    <div class="slider_block_img">
+                        <img src="img/web_design_slills.png" alt="" >
+                    </div>
+                  
                   <div class="slider_info">
                     <h3 class="slider_info_header">Web Design Skills</h3>
                     <ul class="slider_info_txt">
@@ -75,7 +90,10 @@
                   </div>
                 </div>
                 <div class="slider_block">
-                  <img src="img/product_owner.png" alt="">
+                    <div class="slider_block_img">
+                      <img src="img/product_owner.png" alt="">  
+                    </div>
+                  
                   <div class="slider_info">
                     <h3 class="slider_info_header">Product Owner Skills</h3>
                     <ul class="slider_info_txt">
@@ -90,30 +108,39 @@
                   </div>
                 </div>
                
-              </section>
-            <a href="#up" class="up_button_about">
-              
-            </a>
+               
+              </section> 
+              <div class="button_left_right">
+                    <button id="prev" class="prev"></button>
+                    <button id="next" class="next"></button>
+                </div>
+              <div class="up_button_about_container">
+                <a href="#up" class="up_button_about"></a>
+              </div>
+            
             
 
         </div>
         <footer>
             <div class="footer_block" >
                 <div class="footer_left_part">
-                    <a href="index.html" class="footer_name">IRINA TURKINA</a>
-                    <a href="https://www.linkedin.com/in/irina-turkina-8a155a170/" target="_blank"  class="linkedin"><img src="img/in.png" alt=""></a>
+                    <div class="footer_name">IRINA TURKINA</div>
+                    <a href="https://www.linkedin.com/in/irina-turkina-8a155a170/" target="_blank" class="linkedin"><img src="img/in.png" alt="" ></a>
                 </div>
-                <div class="site_map">
+                <div class="map_block">
+                     <div class="site_map">
                     <div class="site_map_header">Site Map
-                        <a href="#">About</a>
+                        <a href="about.html">About</a>
                         <a href="portfolio.html">Portfolio</a>
                         <a href="contact.html">Contact</a>
                     </div>
                 </div>
                 <div class="contact_info">Contact Information
                     <div class="phone">+44 789 522 3031</div>
-                    <div class="email">irina@spectrumwise.tech</div>
+                    <a href="mailto:irina@spectrumwise.tech&cc=e.turkina2010@yandex.ru" class="email">irina@spectrumwise.tech</a>
                 </div>
+                </div>
+               
             </div>
 
         </footer>
