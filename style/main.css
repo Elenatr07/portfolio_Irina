@@ -76,17 +76,25 @@ a {
     width: 100%;
 }
 
-.name {
+.name, .menu_item_name{ 
     font-family: "Kumbh Sans", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 22.32px;
     letter-spacing: 0.15em;
-    text-align: left;
+    
     color: rgba(255, 255, 255, 1);
     
     
 }
+.name{
+    text-align: left;
+}
+.menu_item_name{
+    color: rgba(78, 27, 209, 1);
+        margin-top: 30px;
+        margin-bottom: 30px;
+ }
 .menu_item {
     font-family: "Kumbh Sans", sans-serif;
     font-size: 18px;
@@ -379,7 +387,7 @@ a {
    width: 100%;
    height: 100%;
    order: 2;
-   margin: auto;
+   margin: auto 0;
    
 }
 .featured_projects_img1_bakery,
@@ -392,6 +400,8 @@ a {
     max-width: 672px;
     height: 100%;
     width: 100%;
+    order: 2;
+    margin: auto 0;
 }
 
 
@@ -437,15 +447,18 @@ a {
 }
 .project_text_bakery{
     max-width: 808px;
+    width: 100%;
 }
 .project_text_bakery_left{
     max-width: 688px;
+    width: 100%;
 }
 
 .central_block_bakery_text{
     max-width: 1064px;
     margin: 39px auto 0 auto;
     text-align: center;
+    width: 100%;
 }
 
 .featured_projects_info,
@@ -466,6 +479,7 @@ a {
 .featured_projects_info_bakery{
     margin: 100px auto 50px auto;
     max-width: 1612px;
+    width: 100%;
 }
 .featured_projects_info_bakery:first-child{
     margin-top: 150px;
@@ -881,7 +895,10 @@ li::marker{
 
 
 .bakery_projects_text1 {
-    margin: auto 0 
+    margin: auto 0;
+    order: 2;
+    max-width: 747px;
+    width: 100%;
 }
 .featured_projects_info_bakery:last-child {
     margin-bottom: 11px;
@@ -1163,6 +1180,8 @@ textarea[type=text]::placeholder {
    
     
  }
+
+
  @media screen and (min-width: 801px) and (max-width:2560px){
      .nav_shadow {
     display: none;
@@ -1181,6 +1200,9 @@ textarea[type=text]::placeholder {
     display: flex;
     justify-content: space-around;
     background: none;
+ }
+ .menu_item_name{
+    display: none;
  }
  }
 
@@ -1222,7 +1244,8 @@ textarea[type=text]::placeholder {
         font-size: 23px;
     }
    
-    .featured_projects_img{
+    .featured_projects_img,
+    .projects_img{
         width: 49%;
     }
 }
@@ -1249,12 +1272,20 @@ textarea[type=text]::placeholder {
         width: 60%;
     }
     .featured_projects_header, 
-    .portfolio_header{
+    .portfolio_header,
+    .project_header_bakery, 
+    .project_header_bakery_central{
             font-size: 38px;
     }
-    .featured_projects_text1 {
+    .featured_projects_text1,
+    .bakery_projects_text1
+     {
         margin: auto 60px auto 0;
         width: 42%;
+    }
+    .featured_projects_text2{
+        width: 50%;
+
     }
     
     .project_text{
@@ -1328,6 +1359,12 @@ textarea[type=text]::placeholder {
         display: flex;
         justify-content: center;
     }
+    .img_central_block{
+        flex-wrap: wrap;
+    }
+    .central_block_img{
+        width: 32%;
+    }
     
 }
 
@@ -1347,7 +1384,9 @@ textarea[type=text]::placeholder {
         height: 18px;
     }
     .featured_projects_header, 
-    .portfolio_header {
+    .portfolio_header,
+    .project_header_bakery, 
+    .project_header_bakery_central {
         font-size: 37px;
     }
     .project_header {
@@ -1388,12 +1427,7 @@ textarea[type=text]::placeholder {
 
 }
 @media(max-width:1200px){
-    .name{
-        font-size: 17px;
-    }
-    .menu_item {
-        font-size: 16px;
-    }
+    
     
     .down_button, 
     .down_button_about, 
@@ -1448,8 +1482,8 @@ textarea[type=text]::placeholder {
     
 }
 @media(max-width:1100px){
-    .main_header,
-    .main_header_portfolio {
+    .main_header
+    {
         margin-top: 160px;
     }
  
@@ -1800,13 +1834,24 @@ textarea[type=text]::placeholder {
         line-height: 43px;
     }
     .featured_projects_header, 
-    .portfolio_header {
+    .portfolio_header,
+    .project_header_bakery, 
+    .project_header_bakery_central {
         font-size: 34px;
     }
     .slider_info_txt li {
         line-height: 23px;
         font-size: 17px;
     }
+    
+    .featured_projects_info_bakery:first-child {
+        margin-top: 100px;
+    }
+    .bakery_projects_text1 {
+        margin: auto 0 auto 0;
+        width: 46%;
+    }
+    
     
 
 }
@@ -1852,6 +1897,13 @@ textarea[type=text]::placeholder {
         margin-top: 80px;
         
     }
+    .bakery_projects_text1 {
+     
+        order: 1;;
+    }
+    .central_block_bakery {
+        margin-top: 90px;
+    }
    
     .down_button_block{
         display: none;
@@ -1866,7 +1918,9 @@ textarea[type=text]::placeholder {
     }
     .featured_projects_img,
     .featured_projects_text1,
-    .featured_projects_text2 {
+    .featured_projects_text2,
+    .projects_img,
+    .bakery_projects_text1 {
         width: 96%;
     }
     .featured_projects_text1 {
@@ -1941,6 +1995,33 @@ textarea[type=text]::placeholder {
     .pic_items {
         margin: 90px auto 0 auto;
     }
+    .logo{
+        top: 32px;
+    }
+    .project_header_bakery,
+    .project_header_bakery_central{
+        text-align: center;
+    }
+    .projects_img{
+        margin-top: 30px;
+    }
+    .featured_projects_info_bakery:first-child {
+        margin-top: 60px;
+    }
+    .central_block_img {
+        margin: 24px 11px 0 11px;
+    }
+    .central_block_img {
+        width: 42%;
+    }
+    .img_central_block {
+        margin: 6px auto;
+    }
+    .upper_block_bakery {
+        height: 359px;
+    }
+    
+       
     
 }
 @media(max-width:769px){
@@ -2146,7 +2227,7 @@ textarea[type=text]::placeholder {
         font-size: 18px;
         line-height: 27px;
         margin-top: 29px;
-        text-align: justify;
+        
     }
     .main_header_img_min {
         width: 50%;
@@ -2158,7 +2239,9 @@ textarea[type=text]::placeholder {
         top: 204px;
     }
     .featured_projects_header, 
-    .portfolio_header {
+    .portfolio_header,
+    .project_header_bakery, 
+    .project_header_bakery_central {
         font-size: 32px;
     }
     .project_header {
@@ -2265,7 +2348,8 @@ textarea[type=text]::placeholder {
     .get_in_touch_button {
         width: 153px;
     }
-    .featured_projects_header, .portfolio_header {
+    .featured_projects_header, .portfolio_header,
+    .project_header_bakery, .project_header_bakery_central {
         font-size: 28px;
     }
     .project_header {
