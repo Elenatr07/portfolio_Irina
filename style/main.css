@@ -2163,6 +2163,17 @@ textarea[type=text]::placeholder {
     .logo {
         margin-left: 28px;
     }
+    .slider_info_txt li {
+        line-height: 15px;
+    }
+    .slider_info_header{
+        margin-bottom: 13px;
+        
+    }
+    .button_left_right{
+        margin-top: 0;
+    }
+    
  
 
 }
