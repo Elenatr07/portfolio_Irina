@@ -1902,7 +1902,7 @@ textarea[type=text]::placeholder {
         order: 1;;
     }
     .central_block_bakery {
-        margin-top: 90px;
+        margin-top: 60px;
     }
    
     .down_button_block{
@@ -2020,6 +2020,8 @@ textarea[type=text]::placeholder {
     .upper_block_bakery {
         height: 359px;
     }
+    .featured_projects_info_bakery {
+        margin: 60px auto 50px auto;
     
        
     
