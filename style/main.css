@@ -148,6 +148,7 @@ a {
 .first_block_portfolio {
     margin: 0 auto;
     max-width: 1080px;
+    width: 100%;
 }
 .main_header, 
 .main_header_about,
@@ -371,6 +372,7 @@ a {
 }
 .portfolio_header{
     max-width: 587px;
+    width: 100%;
 }
 .featured_projects_img{
    max-width: 700px;
@@ -840,6 +842,10 @@ li::marker{
     display: flex;
     justify-content: space-between;
 }
+.pic_items a img {
+    width: 100%;
+    display: block;
+}
 
 .pic_items a img:hover{
     transform: scale(0.99);
@@ -1186,7 +1192,8 @@ textarea[type=text]::placeholder {
     .footer_block,
     .logo,
     .first_block_about,
-    .up_button_about_container  {
+    .up_button_about_container,
+    .first_block_portfolio  {
         width: 90%;
     }
     .button_left_right{
@@ -1194,6 +1201,9 @@ textarea[type=text]::placeholder {
     }
     .slider_info{
         width: 60%;
+    }
+    .pic_items a img {
+        width: 90%;
     }
        
     
@@ -1307,6 +1317,17 @@ textarea[type=text]::placeholder {
     .site_map_header a:hover{
         font-size: 18px;
     }
+    .pic_items {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .pic_items a img {
+        margin-bottom: 40px;
+    }
+    .pic_items a{
+        display: flex;
+        justify-content: center;
+    }
     
 }
 
@@ -1353,6 +1374,7 @@ textarea[type=text]::placeholder {
     .button_left_right {
         width: 53%;
     }
+  
    
 }
 @media(max-width:1247px) {
@@ -1408,7 +1430,12 @@ textarea[type=text]::placeholder {
     .phone, .email {
         font-size: 16px;
     }
-   
+    .pic_items {
+         margin: 150px auto 0 auto;
+    }
+    .pic_items a{
+        width:50%;
+    }
     
 }
 @media(max-width:1150px) {
@@ -1421,7 +1448,8 @@ textarea[type=text]::placeholder {
     
 }
 @media(max-width:1100px){
-    .main_header {
+    .main_header,
+    .main_header_portfolio {
         margin-top: 160px;
     }
  
@@ -1901,10 +1929,23 @@ textarea[type=text]::placeholder {
     .slider_info {
         width: 70%;
     }
+    .pic_items a {
+        width: 100%;
+    }
+    .upper_block_portfolio {
+        height: 462px;
+    }
+    .main_header_info_portfolio {
+        margin-bottom: 0px; 
+    }
+    .pic_items {
+        margin: 90px auto 0 auto;
+    }
     
 }
 @media(max-width:769px){
-    .main_header {
+    .main_header,
+    .main_header_portfolio {
         margin-top: 134px;
     }
     .main_header_img_min {
