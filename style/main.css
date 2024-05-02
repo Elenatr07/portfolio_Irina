@@ -908,10 +908,13 @@ li::marker{
 
 .contact_form_img{
    max-width: 800px;
-    height: 100%;
     width: 100%;
     margin: 45px auto;
     display: block;
+}
+.form_img_block{
+    max-width: 800px;
+    width: 100%;
 }
 .contacts_block {
     display: flex;
@@ -928,14 +931,18 @@ li::marker{
 
 }
 form {
-    margin: 0px auto 0 auto;
+    margin: 0px auto 150px auto;
+    max-width: 536px;
+    width: 100%;
 }
 .contacts {
     max-width: 1600px;
     margin: 0 auto;
+    width: 100%;
 }
 .putInfo_for_contacts{
-    width: 536px;
+    max-width: 536px;
+    width: 100%;
     height: 55px;
     border-radius: 30px;
     border: 2px solid rgba(60, 60, 190, 1);
@@ -953,7 +960,8 @@ form {
     border: 2px solid rgba(206, 127, 249, 1)
 }
 .text_field{
-    width: 536px;
+    max-width: 536px;
+    width:100%;
     height: 250px;
     border-radius: 30px;
     border: 2px solid rgba(60, 60, 190, 1);
@@ -988,7 +996,7 @@ textarea[type=text]::placeholder {
     text-align: left;
     color: rgba(255, 255, 255, 1);
     padding: 15px 50px;
-    margin: 59px auto 150px auto;
+    margin: 59px auto 0 auto;
     text-align: center;
     display: block;
 
@@ -1227,6 +1235,13 @@ textarea[type=text]::placeholder {
     .pic_items a img {
         width: 90%;
     }
+   
+    .form_img_block{
+        width: 90%;
+    }
+    .contacts{
+        width: 90%;
+    }
        
     
     
@@ -1365,9 +1380,16 @@ textarea[type=text]::placeholder {
     .central_block_img{
         width: 32%;
     }
-    
+    .featured_projects_text1, 
+    .bakery_projects_text1 {
+        margin: auto;
+        width: 42%;
+ 
+    }
+    form {
+        margin: 0px auto 0px auto
+    }
 }
-
 
 
 @media(max-width:1300px){
@@ -2023,7 +2045,7 @@ textarea[type=text]::placeholder {
     .featured_projects_info_bakery {
         margin: 60px auto 50px auto;
     
-       
+    }
     
 }
 @media(max-width:769px){
