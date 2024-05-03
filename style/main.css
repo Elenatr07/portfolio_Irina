@@ -68,7 +68,7 @@ a {
 }
 
 .upper_block_success{
-    height: 150px;
+    height: 16vh;
 }
 .menu {
     max-width: 1770px;
@@ -693,7 +693,7 @@ footer {
     -moz-background-size: cover;
     -o-background-size: cover;
     width: 100%;
-    height: 318px;
+    height: 35vh;
   
 }
 .footer_block {
@@ -765,11 +765,21 @@ footer {
     line-height: 22.32px;
     letter-spacing: 0.15em;
     text-align: left;
-    margin-top: 27px;
-    margin-bottom: 20px;
+    
     color:rgba(255, 255, 255, 1) ;
 
 }
+.email{
+    margin-top: 27px;
+    margin-bottom: 20px;
+}
+.phone{
+    
+        pointer-events: none;
+        cursor: default;
+    
+}
+
 .email:hover{
     font-weight: 400;
    
@@ -915,7 +925,7 @@ li::marker{
 
 
 .contact_form_img{
-   max-width: 800px;
+   max-width: 688px;
     width: 100%;
     margin: 45px auto;
     display: block;
@@ -1021,7 +1031,7 @@ textarea[type=text]::placeholder {
     margin-right: 48px;
 }
 .success{
-    height: 50vh;
+   height: 49vh;
     text-align: center;
     vertical-align: middle;
     display: flex;
@@ -1029,6 +1039,10 @@ textarea[type=text]::placeholder {
     
     
 
+}
+.success_text{
+    width: 95%;
+    margin: auto;
 }
 .success div{
     margin: auto 0;
@@ -1198,6 +1212,18 @@ textarea[type=text]::placeholder {
    
     
  }
+ .email_in_header{
+    color: rgba(206, 127, 249, 1);
+ }
+ .tel {
+    margin-top: 20px;
+    margin-bottom: 18px;
+    
+ }
+ .container_success{
+    min-height: 100vh;
+ }
+   
 
 
  @media screen and (min-width: 801px) and (max-width:2560px){
@@ -1246,6 +1272,9 @@ textarea[type=text]::placeholder {
         .contacts{
         width: 90%;
     }
+    .form_img_block {
+        width: 47%;
+    }
        
     
     
@@ -1254,7 +1283,8 @@ textarea[type=text]::placeholder {
 @media(max-width:1800px){
     .main_header, 
     .main_header_about, 
-    .main_header_portfolio{
+    .main_header_portfolio,
+    .success div h1{
         font-size: 46px;
     }
     .main_text, 
@@ -1267,11 +1297,13 @@ textarea[type=text]::placeholder {
     .projects_img{
         width: 49%;
     }
+    
 }
 @media(max-width:1700px) {
     .main_header, 
     .main_header_about, 
-    .main_header_portfolio{
+    .main_header_portfolio,
+    .success div h1{
         font-size: 42px;
     }
     .main_text, 
@@ -1325,7 +1357,8 @@ textarea[type=text]::placeholder {
 @media(max-width:1500px){
     .main_header, 
     .main_header_about, 
-    .main_header_portfolio {
+    .main_header_portfolio,
+    .success div h1 {
         font-size: 38px;
     }
     .main_text {
@@ -1452,6 +1485,9 @@ textarea[type=text]::placeholder {
     }
     .contacts_block{
         margin-top: 50px;
+    }
+    .form_img_block {
+        width: 100%;
     }
   
    
@@ -1731,8 +1767,11 @@ textarea[type=text]::placeholder {
     }
    
     .site_map_header a,
-    .phone, .email{
+    .phone{
         margin-top: 17px;
+    }
+    .email {
+        margin-top: 10px;
     }
     .footer_name{
         margin-top: -7px;
@@ -1751,6 +1790,15 @@ textarea[type=text]::placeholder {
     footer{
         height: 240px;
     }
+    .footer_success{
+        height: 30vh;
+    }
+    .tel {
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+    .success {
+        height: 54vh;
 }
 @media(max-width:900px){
    
@@ -1762,6 +1810,12 @@ textarea[type=text]::placeholder {
             
      
      }
+     .phone{
+        pointer-events: auto;
+     cursor: pointer;
+     }
+     
+ 
      .main_header_img{
         display: none;
     }
@@ -1877,7 +1931,8 @@ textarea[type=text]::placeholder {
     
     .main_header, 
     .main_header_about, 
-    .main_header_portfolio{
+    .main_header_portfolio,
+    .success div h1{
         line-height: 43px;
     }
     .featured_projects_header, 
@@ -1906,6 +1961,10 @@ textarea[type=text]::placeholder {
 @media(max-width:850px) {
     .main_text {
         max-width: 455px;
+    }
+    .tel {
+        margin-top: 9px;
+        margin-bottom: 4px;
     }
 }
 
@@ -2078,6 +2137,13 @@ textarea[type=text]::placeholder {
     .contacts_block {
         margin-top: 28px;
     }
+    .form_img_block {
+        width: 87%;
+    }
+       .success_back{
+        width: 168px;
+        margin-top: 40px;
+    }
     
 }
 @media(max-width:769px){
@@ -2144,6 +2210,11 @@ textarea[type=text]::placeholder {
     }
     .main_header_img_min {
         width: 39%;
+    }
+    .success div h1 {
+       font-size: 33px;
+       font-weight: 400;
+        
     }
    
     
@@ -2217,6 +2288,10 @@ textarea[type=text]::placeholder {
     .button_left_right {
         width: 50%;
     }
+    .success div h1 {
+        font-size: 30px;
+        letter-spacing: 0;
+    }
 }
 @media(max-width:500px) {
     .prev {
@@ -2258,6 +2333,9 @@ textarea[type=text]::placeholder {
     }
     .slider_info_txt li{
         letter-spacing: 0.07rem;
+    }
+    .success div h1 {
+        font-size: 26px;
     }
     
 }
@@ -2317,7 +2395,11 @@ textarea[type=text]::placeholder {
     .first_block_about {
         height: 875px;
     }   
-    
+    .success_back {
+        font-size: 17px;
+        margin-top: 16px;
+    }
+   
    
     
     .up_button,
